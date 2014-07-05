@@ -333,7 +333,7 @@ $KORP=($KOR/$total)*100;
                     <td><?=$MEXP?></td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
+                    <th scope="row">Cameroon</th>
                     <td><?=$CMRP?></td>
                 </tr>
                 <tr>
@@ -357,7 +357,7 @@ $KORP=($KOR/$total)*100;
                     <td><?=$GREP?></td>
                 </tr>
 				<tr>
-                    <th scope="row"></th>
+                    <th scope="row">Côte d’Ivoire</th>
                     <td><?=$CIVP?></td>
                 </tr>
 				<tr>
@@ -369,7 +369,7 @@ $KORP=($KOR/$total)*100;
                     <td><?=$URUP?></td>
                 </tr>
 				<tr>
-                    <th scope="row"></th>
+                    <th scope="row">Costa Rica</th>
                     <td><?=$CRCP?></td>
                 </tr>
 				<tr>
@@ -381,11 +381,11 @@ $KORP=($KOR/$total)*100;
                     <td><?=$ITAP?></td>
                 </tr>
 				<tr>
-                    <th scope="row"></th>
+                    <th scope="row">Switzerland</th>
                     <td><?=$SUIP?></td>
                 </tr>
 				<tr>
-                    <th scope="row"></th>
+                    <th scope="row">Ecuador</th>
                     <td><?=$ECUP?></td>
                 </tr>
 				<tr>
@@ -393,7 +393,7 @@ $KORP=($KOR/$total)*100;
                     <td><?=$FRAP?></td>
                 </tr>
 				<tr>
-                    <th scope="row"></th>
+                    <th scope="row">Honduras</th>
                     <td><?=$HONP?></td>
                 </tr>
 				<tr>
@@ -401,11 +401,11 @@ $KORP=($KOR/$total)*100;
                     <td><?=$ARGP?></td>
                 </tr>
 				<tr>
-                    <th scope="row"></th>
+                    <th scope="row">Bosnia and Herzegovina</th>
                     <td><?=$BIHP?></td>
                 </tr>
 				<tr>
-                    <th scope="row"></th>
+                    <th scope="row">Iran</th>
                     <td><?=$IRNP?></td>
                 </tr>
 				<tr>
@@ -417,7 +417,7 @@ $KORP=($KOR/$total)*100;
                     <td><?=$GERP?></td>
                 </tr>
 				<tr>
-                    <th scope="row"></th>
+                    <th scope="row">Portugal</th>
                     <td><?=$PORP?></td>
                 </tr>
 				<tr>
@@ -433,11 +433,11 @@ $KORP=($KOR/$total)*100;
                     <td><?=$BELP?></td>
                 </tr>
 				<tr>
-                    <th scope="row"></th>
+                    <th scope="row">Algeria</th>
                     <td><?=$ALGP?></td>
                 </tr>
 				<tr>
-                    <th scope="row"></th>
+                    <th scope="row">Russia</th>
                     <td><?=$RUSP?></td>
                 </tr>
 				<tr>
