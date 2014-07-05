@@ -1,0 +1,160 @@
+<?php include "twitteroauth/twitteroauth.php"; ?>
+<?php
+$consumer = "yaabrMzig0spRpUHySamRl77w";
+$consumersecret ="MpGwpxuAB6Fqdbjz4Bx1VoIUS7zz4KsWjtPs1DzbQf519mctyp";
+$accesstoken ="2602792340-iHrEyDieEEVEc9Bux9ZrUpjloAUhd6XSzZ1sawt";
+$accesstokensecret ="FswUuccVFMZ3ckq1AmQIyeBzIqmQMgVTYwjEwCLq0iyG3";
+$twitter = new TwitterOAuth($consumer,$consumersecret,$accesstoken,$accesstokensecret);
+$BRA=0;
+$COL=0;
+$CRO=0;
+$MEX=0;
+$CMR=0;
+$ESP=0;
+$NED=0;
+$CHI=0;
+$AUS=0;
+$GRE=0;
+$CIV=0;
+$JPN=0;
+$URU=0;
+$CRC=0;
+$ENG=0;
+$ITA=0;
+$SUI=0;
+$ECU=0;
+$FRA=0;
+$HON=0;
+$ARG=0;
+$BIH=0;
+$IRN=0;
+$NGA=0;
+$GER=0;
+$POR=0;
+$GHA=0;
+$USA=0;
+$BEL=0;
+$ALG=0;
+$RUS=0;
+$KOR=0;
+?>
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+</head>
+<body>
+<form action="" method="post">
+<label>search :<input type ="text" name="keyword"/></search>
+</form>
+<?php 
+if( isset($_POST['keyword'])){
+$tweets = $twitter -> get('https://api.twitter.com/1.1/search/tweets.json?q=FIFA&lang=en&result_type=recent&count=10');
+foreach($tweets as $tweet){
+foreach($tweet as $t)
+{
+
+if (strpos($t->text,'#BRA') !== false) {
+    $BRA++;
+}
+if (strpos($t->text,'#CRO') !== false) {
+    $CRO++;
+}
+if (strpos($t->text,'#MEX') !== false) {
+    $MEX++;
+}
+if (strpos($t->text,'#CMR') !== false) {
+    $CMR++;
+}
+if (strpos($t->text,'#ESP') !== false) {
+    $ESP++;
+}
+if (strpos($t->text,'#NED') !== false) {
+    $NED++;
+}
+if (strpos($t->text,'#CHI') !== false) {
+    $CHI++;
+}
+if (strpos($t->text,'#AUS') !== false) {
+    $AUS++;
+}
+if (strpos($t->text,'#COL') !== false) {
+    $COL++;
+}
+if (strpos($t->text,'#GRE') !== false) {
+    $GRE++;
+}
+if (strpos($t->text,'#CIV') !== false) {
+    $CIV++;
+}
+if (strpos($t->text,'#JPN') !== false) {
+    $JPN++;
+}
+if (strpos($t->text,'#URU') !== false) {
+    $URU++;
+}
+if (strpos($t->text,'#CRC') !== false) {
+    $CRC++;
+}
+if (strpos($t->text,'#ENG') !== false) {
+    $ENG++;
+}
+if (strpos($t->text,'#ITA') !== false) {
+    $ITA++;
+}
+if (strpos($t->text,'#SUI') !== false) {
+    $SUI++;
+}
+if (strpos($t->text,'#ECU') !== false) {
+    $ECU++;
+}
+if (strpos($t->text,'#FRA') !== false) {
+    $FRA++;
+}
+if (strpos($t->text,'#HON') !== false) {
+    $HON++;
+}
+if (strpos($t->text,'#ARG') !== false) {
+    $ARG++;
+}
+if (strpos($t->text,'#BIH') !== false) {
+    $BIH++;
+}
+if (strpos($t->text,'#IRN') !== false) {
+    $IRN++;
+}
+if (strpos($t->text,'#NGA') !== false) {
+    $NGA++;
+}
+if (strpos($t->text,'#GER') !== false) {
+    $GER++;
+}
+if (strpos($t->text,'#POR') !== false) {
+    $POR++;
+}
+if (strpos($t->text,'#GHA') !== false) {
+    $GHA++;
+}
+if (strpos($t->text,'#USA') !== false) {
+    $USA++;
+}
+if (strpos($t->text,'#BEL') !== false) {
+    $BEL++;
+}
+if (strpos($t->text,'#ALG') !== false) {
+    $ALG++;
+}
+if (strpos($t->text,'#RUS') !== false) {
+    $RUS++;
+}
+if (strpos($t->text,'#KOR') !== false) {
+    $KOR++;
+}
+echo '<br/>'.'<img src="'.$t->user->profile_image_url.'"/>'.$t->text;
+echo $BRA;
+}
+}
+}
+?>
+</body>
+</html>

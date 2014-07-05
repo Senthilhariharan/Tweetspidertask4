@@ -1,0 +1,125 @@
+<!DOC TYPE html>
+<html>
+<style>
+
+
+body {
+    background: #333;
+    
+}
+
+#wrapper {
+  margin: 10px;
+}
+
+
+.menu,
+.sub-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  background-color: #3E454D;
+  cursor: pointer;
+  position: relative;
+  transition: background-color .5s;
+  -moz-transition: background-color .5s;
+  -o-transition: background-color .5s;
+  -webkit-transition: background-color .5s;
+  
+}
+
+.menu li:hover {
+  background-color: #353B41 ;
+  }
+
+.menu a {
+  color: #FFF;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  height: 100%;
+  margin: 0 5px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.menu a:hover {
+ 
+  color: #FFF;
+}
+
+.menu {
+  
+  height: 90px;
+}
+
+.menu > li {
+  float: left;
+  height: 100%;
+  width: 15%; 
+  width: calc((100% - 90px) / 2);
+  width: -moz-calc((100% - 90px) / 2);
+  width: -webkit-calc((100% - 90px) / 2);
+  
+}
+
+.menu > li.home {
+  background: #3E454D url(http://icons.iconarchive.com/icons/visualpharm/icons8-metro-style/48/Very-Basic-Home-icon.png) center no-repeat ;
+  
+  width: 90px;
+}
+p{
+color: white;
+}
+.menu > li.current {
+  background-color: #F2762E ; 
+ 
+  
+  
+}
+
+
+.menu > li.home > a {
+  color: transparent ;
+}
+
+.menu > li > a > span {
+  left: 0; 
+  position: absolute;
+  right: 0;
+  top: 50%;
+  
+  
+}
+
+
+ 
+
+</style>
+<body>
+<div id="wrapper">
+      <nav>
+        <ul class="menu">
+          <li class="home current"><a href="about.html"><span>Home</span></a></li>
+          
+          <li><a href="twitter_login.php"><span>FIFA TWEETS</span></a>
+          
+             
+          </li>
+          
+          <li><a href="raphel.php"><span>TWEET STATS</span></a></li>
+        </ul>
+      </nav>
+    </div>
+<center>
+<p>PROJECT BY SENTHIL</p>
+</center>
+</body>
+</html>
